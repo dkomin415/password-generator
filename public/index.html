@@ -30,42 +30,49 @@
 
   <section class="modal-container" id="modal_container">
     <div class="modal">
-      <h2>Password Criteria</h2>
-      <lable for="length">Password Length</lable>
-      <input id="length" value="10" type="number" min="8" max="128">
-
-      <p>Choose Character Types</p>
-      <hr>
-      <div class="flex">
+      <div class="modal-header">
+        <h1>Password Criteria</h1>
+      </div>
+      <div class="modal-body">
+        <p>Choose Character Types</p>
+        <hr>
+        <lable for="length">Password Length</lable>
+        <input id="length" value="10" type="number" min="8" max="128">
+        
+        <div class="flex">
         <div class="list-items">
           <input type="checkbox" id="lowercase">
           <label for="lowercase">
             Lowercase
           </label>
         </div>
-
+        
         <div class="list-items">
           <input type="checkbox" id="uppercase">
           <label for="uppercase">
             Uppercase
           </label>
         </div>
-
+        
         <div class="list-items">
           <input type="checkbox" id="numbers">
           <label for="numbers">
             Numbers
           </label>
         </div>
-
+        
         <div class="list-items">
           <input type="checkbox" id="spec-char">
           <label for="spec-char">
-            Special Characters(i.e. !@#$)
+            Special Characters 
+            (i.e. !@#$)
           </label>
         </div>
-        <button id="submit">Get Your Password!</button>
       </div>
+    </div>
+    <div class="modal-footer">
+      <button id="submit">Get Your Password!</button>
+    </div>
   </section>
   <footer>
     <script src="script.js"></script>
