@@ -52,7 +52,7 @@ hr {
 }
 
 .modal-body {
-  display: block;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
@@ -66,10 +66,12 @@ hr {
   flex-direction: column;
   padding: 2%;
   width: 70%;
+  /* align-items: center; */
 }
 
 .list-items {
   display: flex;
+  justify-content: flex-start;
 }
 
 .show {
