@@ -90,7 +90,7 @@ function writePassword() {
 submitBtn.addEventListener("click", function(){
   modalContainer.classList.remove('show');
   if (!lowerCase.checked && !upperCase.checked && !numbers.checked && !specChar.checked) {
-    alert("Error: Please Check One Of The Boxes");
+    alert("Error: Please choose at least one option");
     triggerModal();
   }
   writePassword();
